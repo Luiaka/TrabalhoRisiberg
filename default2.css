@@ -1,0 +1,18 @@
+
+h1 {
+  text-shadow: 0 0 6px white;
+}
+
+h2 {
+  text-shadow: 0 0 3px white;
+}
+
+p,
+h1,
+h2 {
+  color: blanchedalmond;
+}
+
+p {
+  font-size: 150%;
+}

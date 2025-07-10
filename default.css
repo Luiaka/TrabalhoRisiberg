@@ -1,0 +1,19 @@
+body{
+  background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.192), rgb(110, 110, 110));
+  height: 600vh;
+  overflow-y: hidden;
+  
+}
+
+h1 {
+  text-shadow: 0 0 6px white;
+}
+
+h2 {
+  text-shadow: 0 0 3px white;
+}
+
+p, h1, h2{color: blanchedalmond;}
+
+p{font-size: 150%;}
+

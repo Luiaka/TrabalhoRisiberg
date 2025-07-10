@@ -1,0 +1,30 @@
+.particula {
+  position: fixed;
+  bottom: -20px;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.4;
+  animation: subir 6s linear infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Exemplo de variações */
+.particula:nth-child(1) { left: 10%; animation-delay: 0s; }
+.particula:nth-child(2) { left: 30%; animation-delay: 1s; }
+.particula:nth-child(3) { left: 50%; animation-delay: 2s; }
+.particula:nth-child(4) { left: 70%; animation-delay: 3s; }
+.particula:nth-child(5) { left: 90%; animation-delay: 4s; }
+
+@keyframes subir {
+  0% {
+    transform: translateY(0);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(-120vh);
+    opacity: 0;
+  }
+}

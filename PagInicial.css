@@ -1,0 +1,53 @@
+
+
+
+/* Gabi, essa parte faz a formatação dos textos nos div's com o nome da classe "Disci(1, 2, 3, 4).
+Se achar que os textos estão desalinhados. Pfv, corrigir aqui  */
+.Disci1, .Disci2, .Disci3, .Disci4 {
+    text-align: center;
+    transition: transform 0.3s;
+    cursor: pointer;
+    margin-top: 90px;
+}
+
+/* Aqui é a formatação das imagens  */
+.img1, .img2, .img3, .img4 {
+    margin-top: 3%;
+    width: 180px;
+    height: 180px;
+    transition: transform 0.3s;
+}
+
+/* Isso aqui é pra quando passar o mouse em cima */
+.Disci1:hover, .Disci2:hover, .Disci3:hover, .Disci4:hover {
+    transform: scale(1.2);
+}
+/* Isso aqui é pra dar a sombra no texto quando passar o mouse em cima*/
+.Disci1:hover, .Disci2:hover, .Disci3:hover, .Disci4:hover{
+    text-shadow: 0 0 10px white;
+}
+li:hover{transform: scale(1.2);}
+li{transition: transform 0.3s;}
+
+
+
+/* Esses "T1" e "T2" é pra formatar os títulos. O t1, por ex, se refere ao título "Sobre a informática" */
+.T1{
+    text-align: center;
+    font-size: 400% ;
+
+}
+
+.T2{
+    text-align: center;
+    font-size: 180% ;
+
+}
+
+
+
+
+
+
+
+
