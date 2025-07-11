@@ -1,96 +1,179 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="default.css">
-    <link rel="stylesheet" href="PagInicial.css">
-    <link rel="stylesheet" href="partículas.css">
-    <style>
-        .Container1 {
-        display: grid;
-         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 20px;
-        padding: 20px;
-        justify-items: center;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página Inicial</title>
 
-        a {
-        text-decoration: none; 
-        color: inherit; 
-        }
+  <!-- Seus arquivos CSS -->
+  <link rel="stylesheet" href="default.css" />
+  <link rel="stylesheet" href="PagInicial.css" />
+  <link rel="stylesheet" href="partículas.css" />
 
-        ul{font-size: 30px; color: white; text-shadow: 0 0 5px white;}
-        
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow-x: hidden;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.192), rgb(110, 110, 110));
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
 
 
-        
-    </style>
+    main {
+      margin-top: 1%;
+      flex: 1;
+      padding: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+    }
+
+    h1.T1,
+    h2.T2 {
+      text-align: center;
+      text-shadow: 0 0 5px white;
+      margin: 20px;
+    }
+
+    .T1 {
+      font-size: 36px;
+    }
+
+    .T2 {
+      font-size: 28px;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .ContainerItem {
+      border: 3px solid black;
+      height: 250px;
+      background-color: #2a2a2a;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .ContainerItem:hover {
+      transform: scale(1.05);
+      background-color: #1e1e1e;
+    }
+
+    .ContainerItem img {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: rgba(48, 47, 47, 0.979);
+      padding: 20px 0;
+      text-align: center;
+      z-index: 2;
+    }
+
+    footer ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      font-size: 20px;
+      text-shadow: 0 0 5px white;
+      margin: 0;
+      padding: 0;
+    }
+
+    footer,
+    ul,
+    li,
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    footer ul li a:hover {
+      text-decoration: underline;
+    }
 
 
-  
+    .particula {
+      z-index: 0;
+    }
+  </style>
 </head>
+
 <body>
-    <h1 class="T1">Sobre a informática</h1>
-    <h2 class="T2"> Disciplinas estudadas</h2>
 
-    
+  <h1 class="T1" style="margin-top: 3%;">Curso Técnico de Informática</h1>
+  <h2 class="T2" style="margin-top: 2%; text-shadow: 0 0 2.5px white; font-size: 190%;">Disciplinas estudadas</h2>
 
-    
-    
+  <!-- Partículas animadas -->
+  <span class="particula"></span>
+  <span class="particula"></span>
+  <span class="particula"></span>
+  <span class="particula"></span>
+  <span class="particula"></span>
 
-    
+  <main>
+    <a href="pag1.html">
+      <div class="ContainerItem">
+        <img src="IconsInicio/local-na-rede-internet.png" alt="Desenvolvimento Web" />
+        <p>Desenvolvimento <br>Web</p>
+      </div>
+    </a>
 
-   
-    <span class="particula"></span>
-    <span class="particula"></span>
-    <span class="particula"></span>
-    <span class="particula"></span>
-    <span class="particula"></span>
-   
+    <a href="pag2.html">
+      <div class="ContainerItem">
+        <img src="IconsInicio/local-na-rede-internet (1).png" alt="Redes" />
+        <p>Redes de Computadores</p>
+      </div>
+    </a>
 
-    
-<div class="Container1">
-    <a href="pag1.html"><div class="Disci1">
-    <img class="img1" src="IconsInicio/local-na-rede-internet.png" alt="" width="180" height="180">
-    <p>Desenvolvimento <br>Web</p>
-    </div></a>
-    
+    <a href="pag3.html">
+      <div class="ContainerItem">
+        <img src="IconsInicio/programacao.png" alt="Programação" />
+        <p>Programação <br>
+          <br>
+        </p>
+      </div>
+    </a>
 
-    <a href="pag2.html"><div class="Disci2">
-    <img class="img2" src="IconsInicio/local-na-rede-internet (1).png" alt="" width="180" height="180">
-    <p>Redes</p>
-    </div></a>
-    
+    <a href="pag4.html">
+      <div class="ContainerItem">
+        <img src="IconsInicio/seguranca-de-banco-de-dados.png" alt="Banco de Dados" />
+        <p>Banco de Dados <br> BR</p>
+      </div>
+    </a>
+  </main>
 
-    <a href="pag3.html"><div class="Disci3">
-    <img class="img3" src="IconsInicio/programacao.png" alt="" width="180" height="180">
-    <p>Programação</p>
-    </div></a>
-    
+  <footer>
+    <ul>
+      <li><a href="#Login">Login</a></li>
+      <li><a href="#Configurações">Configurações</a></li>
+      <li><a href="#Sobre">Sobre</a></li>
+    </ul>
+  </footer>
 
-    <a href="pag4.html"><div class="Disci4">
-    <img class="img4" src="IconsInicio/seguranca-de-banco-de-dados.png" alt="" width="180" height="180">
-    <p>Banco de Dados</p>
-    </div></a>
-</div>
-
-<div style="background: rgba(48, 47, 47, 0.979); margin-bottom: 60px;">
-  <ul style="margin-top: 273px; display: flex; list-style: none; gap: 30px; justify-content: center; font-size: 30px; color: white; text-shadow: 0 0 5px white;">
-    <a href="#Login"><li>Login</li></a>
-    <a href="#Configurações"><li>Configurações</li></a>
-    <a href="#Sobre"><li>Sobre</li></a>
-    
-    
-    
-
-
-
-    
-    
-  </ul>
-</div>
-    
 </body>
+
 </html>

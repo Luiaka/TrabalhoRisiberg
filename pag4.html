@@ -1,36 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Banco de Dados</title>
     <link rel="stylesheet" href="default2.css">
     <link rel="stylesheet" href="partículas.css">
     <style>
-
-        
-        h1{text-align: center; font-size: 80px;}
-        
-        h2{bottom: 0px; font-size: 40px; text-align: center;}
-
-        .Div1{background: linear-gradient(to bottom, rgba(0, 0, 0, 0.055), rgba(196, 158, 75, 0.034));
-        display: inline-block;
-        padding: 0.01px;
-        border-radius: 2%;
-        margin: 0 auto;
-        display: block;
-        width: fit-content;}
-    
-
-
-
-
-        body{
-            background: linear-gradient(to bottom, black, rgb(43, 34, 11));
-            height: 100vh;
-            
+        html {
+            min-height: 100%;
         }
-        </style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100%;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: cover;
+            background: linear-gradient(to bottom, black, rgb(43, 34, 11));
+        }
+
+        .pa {
+            text-align: center;
+            margin: 10%;
+            margin-top: 20px;
+            font-size: clamp(15px, 2vw, 20px);
+        }
+
+
+        h1 {
+            text-align: center;
+            font-size: clamp(40px, 8vw, 80px);
+        }
+
+        h2 {
+            bottom: 0px;
+            text-align: center;
+            font-size: clamp(20px, 4vw, 30px);
+        }
+
+        .Div1 {
+            border: 3px solid rgb(0, 0, 0);
+            background: linear-gradient(to bottom, rgba(43, 34, 11, 0.783), rgba(0, 0, 0, 0.701));
+            padding: 0.01px;
+            border-radius: 2%;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+            min-width: 300px;
+        }
+
+        .Div2 {
+            border: 3px solid rgb(0, 0, 0);
+            background: linear-gradient(to bottom, rgba(43, 34, 11, 0.783), rgba(0, 0, 0, 0.701));
+            display: flex;
+            padding: 0.01px;
+            border-radius: 2%;
+            margin: 0 auto;
+            display: block;
+            width: 40%;
+            min-width: 300px;
+        }
+    </style>
 </head>
 
 <body>
@@ -43,38 +76,81 @@
     <span class="particula"></span>
     <span class="particula"></span>
 
-    <div class="Div1">
-        <h2>Contexto Geral</h2>
-        <p>Bancos de dados servem para armazenar, organizar e acessar grandes volumes de <br>informações de forma rápida e segura. São essenciais em sites, aplicativos e sistemas de empresas.
-</p>
+    <div style="margin-bottom: 70px;">
+        <div style="margin-left: 9%; margin-right: 9%;">
+            <div class="Div1">
+                <h2 style="bottom: 0px; text-align: center;">Contexto Geral</h2>
+                <p class="pa"
+                    style=" margin: 0%; text-align: center; margin-left: 5%; margin-right: 5%; padding-bottom: 20px;">
+                    O armazenamento e o gerenciamento de dados são essenciais para transformar informações em recursos
+                    úteis para empresas e sistemas. Dados são elementos brutos, enquanto a informação é o resultado do
+                    processamento desses dados. Um banco de dados é um sistema organizado para armazenar e gerenciar
+                    grandes volumes de dados, facilitando seu acesso e manipulação. Os Sistemas de Gerenciamento de
+                    Banco de Dados (SGBDs) são ferramentas que permitem criar, manter e controlar esses bancos,
+                    garantindo segurança, integridade e eficiência. Com o avanço tecnológico, o uso de bancos de dados
+                    se tornou fundamental no mercado de trabalho, sendo aplicado em diversas áreas para suportar
+                    processos decisórios e operações diárias.
+                </p>
+            </div>
+        </div>
+        <div
+            style="display: flex; justify-content: space-around; gap: 20px; margin: 20px auto; width: 90%; flex-wrap: wrap;">
+            <div class="Div2">
+                <h2>SQL</h2>
+                <p class="pa">
+                    SQL (Structured Query Language) é a linguagem padrão usada para interagir com bancos de dados
+                    relacionais. Ela permite criar e modificar estruturas de dados, inserir, atualizar, excluir e
+                    consultar informações armazenadas. A linguagem é dividida em partes, como DDL para definir
+                    estruturas (tabelas), DML para manipular dados (inserir, alterar, deletar) e DCL para controlar
+                    acesso e permissões. O SQL possibilita consultas simples e complexas, filtrando dados, ordenando
+                    resultados, agrupando informações e realizando junções entre tabelas para extrair informações
+                    significativas, tornando-se uma ferramenta indispensável para trabalhar com dados.
+                </p>
 
-    </div>
+            </div>
 
-    <div class="Div1">
-        <h2>SQL</h2>
-        <p> Linguagem usada para consultar, inserir, alterar e excluir dados no banco. <br>Com SQL, é possível pedir informações específicas de forma eficiente.
-</p>
+            <div class="Div2">
+                <h2>Tabelas e Registros</h2>
+                <p class="pa">
+                    No modelo relacional, os dados são organizados em tabelas, que representam entidades ou conceitos do
+                    mundo real. Cada tabela é composta por linhas chamadas registros, que armazenam informações
+                    específicas, e colunas que definem os atributos ou características dessas entidades. Essa estrutura
+                    facilita a organização, consulta e atualização dos dados. O correto projeto das tabelas, com
+                    definição adequada dos tipos de dados e relacionamentos, é fundamental para garantir eficiência e
+                    integridade das informações no banco de dados.
+                </p>
 
-    </div>
+            </div>
 
-    <div class="Div1">
-        <h2>Tabelas e Registros</h2>
-        <p>Os dados são organizados em tabelas, que funcionam como planilhas. <br> Cada linha é um registro e cada coluna representa um campo (ex: nome, idade, e-mail).
-</p>
+            <div class="Div2">
+                <h2>Chave primária e estrangeira</h2>
+                <p class="pa">
+                    A chave primária é um atributo ou conjunto de atributos que identifica unicamente cada registro
+                    dentro de uma tabela, garantindo que não existam duplicatas. Ela é essencial para manter a
+                    integridade dos dados e permitir referências claras a registros específicos. A chave estrangeira é
+                    um atributo que estabelece ligação entre tabelas diferentes, apontando para a chave primária de
+                    outra tabela. Essa relação possibilita a criação de vínculos entre entidades, mantendo a
+                    consistência e integridade referencial no banco de dados, o que é fundamental para modelar
+                    relacionamentos reais entre dados.
+                </p>
 
-    </div>
+            </div>
 
-    <div class="Div1">
-        <h2>Chave primária e estrangeira</h2>
-        <p>A chave primária identifica unicamente um registro. A chave estrangeira liga dados <br>de diferentes tabelas, permitindo relacionamentos entre informações.
-</p>
+            <div class="Div2">
+                <h2>SGBDs</h2>
+                <p class="pa">
+                    Os Sistemas de Gerenciamento de Banco de Dados (SGBDs) são softwares que permitem criar, organizar,
+                    proteger e manipular bancos de dados. Eles possuem componentes que garantem o controle de acesso, a
+                    integridade dos dados e o desempenho das operações. A evolução dos SGBDs trouxe melhorias
+                    significativas, como maior capacidade de armazenamento, suporte a múltiplos usuários simultâneos e
+                    ferramentas avançadas de consulta e segurança. Esses sistemas são amplamente utilizados em empresas
+                    para suportar aplicações que exigem manipulação eficiente de dados, como sistemas financeiros,
+                    comerciais e de gestão.
+                </p>
 
-    </div>
-
-    <div class="Div1">
-        <h2>SGBDs</h2>
-        <p>São programas como MySQL, PostgreSQL e Oracle, que ajudam a criar, gerenciar e manter bancos de dados funcionando corretamente.</p>
-
+            </div>
+        </div>
     </div>
 </body>
+
 </html>

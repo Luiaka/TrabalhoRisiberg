@@ -1,33 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Desenvolvimento Web I</title>
     <link rel="stylesheet" href="default2.css">
-    
+
     <link rel="stylesheet" href="partículas.css">
     <style>
-
-        .Div1{background: linear-gradient(to bottom, rgba(0, 0, 0, 0.274), rgba(2, 49, 110, 0.26));
-        display: inline-block;
-        padding: 0.01px;
-        border-radius: 2%;
-        margin: 0 auto;
-        display: block;
-        width: fit-content;
+        html {
+            min-height: 100%;
         }
-        body{background: linear-gradient(to bottom, black, rgb(4, 26, 54));
-        height: 100vh;
-        overflow: hidden;}
-        .particulas{
+
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100%;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: cover;
+            background: linear-gradient(to bottom, black, rgb(4, 26, 54));
+        }
+
+        .pa {
+            text-align: center;
+            margin: 10%;
+            margin-top: 20px;
+            font-size: clamp(15px, 2vw, 20px);
+        }
+
+        .Div1 {
+            border: 3px solid rgb(0, 0, 0);
+            background: linear-gradient(to bottom, rgb(0, 16, 37), rgb(0, 9, 21), rgb(0, 4, 9));
+            padding: 0.01px;
+            border-radius: 2%;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+            min-width: 300px;
+        }
+
+        .Div2 {
+            border: 3px solid rgb(0, 0, 0);
+            background: linear-gradient(to bottom, rgb(0, 16, 37), rgb(0, 9, 21), rgb(0, 4, 9));
+            display: flex;
+            padding: 0.01px;
+            border-radius: 2%;
+            margin: 0 auto;
+            display: block;
+            width: 30%;
+            min-width: 300px;
+        }
+
+        .particulas {
             background: rgb(0, 0, 0);
         }
-        
-        .T1{text-align: center; font-size: 80px;}
-       
+
+        .T1 {
+            text-align: center;
+            font-size: clamp(40px, 8vw, 80px);
+        }
+
+        h2 {
+            bottom: 0px;
+            font-size: clamp(20px, 4vw, 30px);
+            text-align: center;
+        }
     </style>
 </head>
+
 <body>
 
 
@@ -39,69 +81,89 @@
 
 
 
-    <h1 class="T1" >Desenvolvimento Web</h1>
+    <h1 class="T1">Desenvolvimento Web</h1>
 
 
 
-    
- <div>  
-    <div class= "Div1">
-        <h2 style="bottom: 0px; font-size: 40px; text-align: center;"> Contexto Geral</h2>
 
-        <p style="text-align: justify; text-align: center; margin-right: 30px; margin-top: 20px;"> Desenvolvimento Web é a área responsável por criar e manter sites <br> e aplicações acessadas por navegadores. Envolve tanto a parte visual quanto a lógica por trás <br>do funcionamento das páginas. É um dos pilares da internet moderna.
- <br>
-         </p>
+    <div style="margin-bottom: 70px;">
+        <div style="margin-left: 6%; margin-right: 6%;">
+            <div class="Div1">
+                <h2 style="bottom: 0px; text-align: center;"> Contexto Geral</h2>
+
+                <p class="pa"
+                    style=" margin: 0%; text-align: center; margin-left: 5%; margin-right: 5%; padding-bottom: 20px;">
+                    A criação de sites envolve diferentes conhecimentos relacionados à internet, design e programação.
+                    Entender a World Wide Web é essencial para compreender como as páginas funcionam, são acessadas e
+                    distribuídas pelos servidores. A internet oferece diversos serviços, e a construção de sites é um
+                    dos principais, exigindo planejamento e organização. Antes de começar a codificar, é importante
+                    conhecer conceitos de design, como teoria das cores, combinação de cores e profundidade de cor, pois
+                    isso influencia diretamente na aparência e usabilidade do site. Além disso, é necessário aprender a
+                    diferença entre páginas estáticas e interativas, como utilizar templates prontos e como aplicar
+                    frameworks que ajudam no desenvolvimento visual e na responsividade. Todo esse conhecimento
+                    contribui para a criação de páginas mais bonitas, funcionais e acessíveis.
+
+                </p>
+
+            </div>
+        </div>
+
+        <div
+            style="display: flex; justify-content: space-around; gap: 20px; margin: 20px auto; width: 90%; flex-wrap: wrap; margin-bottom: 20px;">
+            <div class="Div2">
+                <h2 style="bottom: 0px; text-align: center;"> HTML</h2>
+                <p class="pa">
+                    O HTML é a linguagem de marcação usada para estruturar o conteúdo das páginas web. Ele define os
+                    elementos visuais da página, como textos, imagens, botões e links, através de tags específicas. Com
+                    HTML, é possível criar tanto páginas estáticas quanto interativas, e ele é a base para o
+                    desenvolvimento de qualquer site. Também é fundamental na organização da arquitetura e do projeto do
+                    site, definindo a estrutura dos arquivos e diretórios. A publicação de um site em um servidor
+                    depende dessa estrutura bem definida em HTML, que funciona como o esqueleto da página.
+                </p>
+
+            </div>
+
+            <div class="Div2">
+                <h2 style="bottom: 0px; text-align: center;"> CSS</h2>
+                <p class="pa">
+                    O CSS é a linguagem responsável pela aparência visual das páginas. Ele permite aplicar estilos como
+                    cores, fontes, espaçamentos e posicionamento dos elementos na tela. É através do CSS que se trabalha
+                    a teoria das cores, combinação de tons, profundidade de cor e os conceitos de design visual. O
+                    layout das páginas, ou seja, a forma como os elementos são organizados, também é controlado com CSS.
+                    Ele permite tornar o site responsivo, adaptando-se a diferentes dispositivos como celulares e
+                    computadores. Além disso, frameworks como Bootstrap e MaterializeCSS facilitam a aplicação de
+                    estilos com mais rapidez e produtividade, oferecendo componentes prontos e sistemas de grid.
+                </p>
 
 
-</div>
 
-         <div class="Div1">
-            <h2 style="bottom: 0px; font-size: 40px; text-align: center;"> HTML</h2>
-            <p>
-                 É a linguagem que forma a estrutura básica de <br>um site. Define o que será exibido, como títulos, parágrafos, imagens, links e listas.
+            </div>
 
 
 
-            </p>
+            <div class="Div2">
+                <h2 style="bottom: 0px; text-align: center;"> JavaScript</h2>
+                <p class="pa">
+                    O JavaScript é a linguagem de programação utilizada para tornar as páginas web dinâmicas e
+                    interativas. Ela é interpretada pelo navegador e permite que os elementos da página respondam às
+                    ações do usuário, como cliques, movimentos do mouse, preenchimento de formulários, entre outros. Com
+                    JavaScript, é possível criar páginas mais inteligentes e funcionais, que mudam seu conteúdo sem
+                    precisar ser recarregadas. Ele trabalha junto com o HTML e o CSS, completando o desenvolvimento web
+                    ao permitir a criação de recursos que tornam a experiência do usuário mais fluida e envolvente.
+                </p>
+
+
+
+            </div>
+        </div>
+
 
     </div>
 
-         <div class="Div1">
-            <h2 style="bottom: 0px; font-size: 40px; text-align: center;"> CSS</h2>
-            <p>Usado para estilizar o conteúdo definido pelo HTML. Com o CSS, é possível alterar cores, <br>
-                fontes, tamanhos, posições e tornar o site mais bonito e organizado.
-
-</p>
-
-
-
-         </div>
-
-
-         
-         <div class="Div1">
-            <h2 style="bottom: 0px; font-size: 40px; text-align: center;"> JavaScript</h2>
-            <p>Linguagem de programação usada para dar vida ao site. Permite criar menus interativos, validar formulários, <br>carregar conteúdo sem recarregar a página, entre outras funcionalidades.
-            </p>
-
-
-
-         </div>
-
-         <div class="Div1">
 
 
 
 
-         </div>
-
-
-    </div>
-</div> 
-
-
-
-
-  
 </body>
+
 </html>
