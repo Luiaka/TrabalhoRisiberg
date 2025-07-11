@@ -1,30 +1,54 @@
+
+
 .particula {
-  position: fixed;
-  bottom: -20px;
-  width: 10px;
-  height: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 8px;
+  height: 8px;
   background: white;
-  border-radius: 50%;
-  opacity: 0.4;
-  animation: subir 6s linear infinite;
-  pointer-events: none;
-  z-index: 0;
+  border-radius: 100%;
+  opacity: 50;
+  animation: subir 5s linear infinite;
+  box-shadow: 0 0 20px rgb(255, 255, 255);
 }
 
-/* Exemplo de variações */
-.particula:nth-child(1) { left: 10%; animation-delay: 0s; }
-.particula:nth-child(2) { left: 30%; animation-delay: 1s; }
-.particula:nth-child(3) { left: 50%; animation-delay: 2s; }
-.particula:nth-child(4) { left: 70%; animation-delay: 3s; }
-.particula:nth-child(5) { left: 90%; animation-delay: 4s; }
+/* Gabi, isso aqui é pra partícula aparecer aleatoriamente */
+.particula:nth-child(1) {
+  left: 20%;
+  animation-delay: 0s;
+}
+.particula:nth-child(2) { 
+  left: 40%;
+  animation-delay: 1s;
+}
+.particula:nth-child(3) {
+  left: 60%;
+  animation-delay: 2s;
+}
+.particula:nth-child(4) {
+  left: 80%;
+  animation-delay: 3s;
+}
+.particula:nth-child(5) {
+  left: 50%;
+  animation-delay: 4s;
+}
+
 
 @keyframes subir {
   0% {
-    transform: translateY(0);
-    opacity: 0.4;
+    transform: translateY(11vh) scale(1);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  70% {
+    opacity: 0.8;
+    transform: translateY(-70vh) scale(0.8);
   }
   100% {
-    transform: translateY(-120vh);
+    transform: translateY(-100vh) scale(0.5);
     opacity: 0;
   }
 }

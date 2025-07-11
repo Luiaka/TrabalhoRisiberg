@@ -1,18 +1,15 @@
-
-h1 {
-  text-shadow: 0 0 6px white;
+body{
+  background: linear-gradient(to bottom, rgb(0, 0, 0), white);
+  height: 600vh;
+  
 }
 
-h2 {
-  text-shadow: 0 0 3px white;
-}
 
-p,
-h1,
-h2 {
-  color: blanchedalmond;
-}
 
-p {
-  font-size: 150%;
-}
+
+h1, h2{ text-shadow: 0 0 5px white;}
+
+p, h1, h2{color: blanchedalmond;}
+
+p{font-size: 150%;}
+
